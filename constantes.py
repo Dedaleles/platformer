@@ -1,0 +1,39 @@
+# --OPTION--
+
+# on definit les constantes
+WIDTH = 1504
+HEIGHT = 896
+FPS = 60
+TITLE = "plateforme"
+FONT_NAME = '04B_30__'
+RANGER_SPRITESHEET = "Ranger-M.png"
+ENVRNMT_SPRITESHEET = "sheet.png"
+DAGGER_SPRITESHEET = "gear_daggers.png"
+
+# Physique du joueur
+PLAYER_ACC = 0.8
+PLAYER_FRICTION = -0.09
+PLAYER_GRAV = 0.8
+PLAYER_JUMP = 25
+
+# Couleurs
+WHITE = (255,255,255)
+BLACK = (0,0,0)
+RED = (255,0,0)
+GREEN = (0,255,0)
+BLUE = (0,0,255)
+YELLOW = (255,255,0)
+LIGHTBLUE = (0, 155, 155)
+BGCOLOR = LIGHTBLUE
+DAGGER_BG = (184, 2, 227)
+
+# arme
+RANGE_CAILLOU = 250
+VIT_CAILLOU = 10
+DAGGER1_RANGE = 350
+DAGGER1_VIT = 20
+
+# ennemi
+SERPENT_VIT = 0.5
+LIM_X_SERPENT = 200
+FRICTION_SERPENT = -0.09
