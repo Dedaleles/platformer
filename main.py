@@ -84,6 +84,8 @@ class Game:
                 plat.rect.x -= abs(int(self.joueur.vel.x + 0.5 * self.joueur.acc.x - self.joueur.acc.x))
             for coffre in self.coffres:
                 coffre.rect.x -= abs(int(self.joueur.vel.x + 0.5 * self.joueur.acc.x - self.joueur.acc.x))
+            for ennemi in self.ennemis:
+                ennemi.pos.x -= abs(int(self.joueur.vel.x + 0.5 * self.joueur.acc.x - self.joueur.acc.x))    
 
         if self.joueur.pos.x <= WIDTH / 4 and self.joueur.vel.x < 0 and -(self.posSol.rect.x) > 0:
             self.joueur.pos.x += abs(self.joueur.vel.x)
@@ -91,6 +93,8 @@ class Game:
                 plat.rect.x += abs(int(self.joueur.vel.x - 0.5 * self.joueur.acc.x - self.joueur.acc.x))
             for coffre in self.coffres:
                 coffre.rect.x += abs(int(self.joueur.vel.x + 0.5 * self.joueur.acc.x - self.joueur.acc.x))
+            for ennemi in self.ennemis:
+                ennemi.pos.x += abs(int(self.joueur.vel.x + 0.5 * self.joueur.acc.x - self.joueur.acc.x))
 
     def events(self):
         # boucle principale - événements

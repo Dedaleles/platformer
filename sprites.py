@@ -185,9 +185,9 @@ class ennemi(pg.sprite.Sprite):
             self.vel.x = 0
         self.pos += self.vel + 0.5 * self.acc
         # bloque le sprite
-        if self.pos.x < self.x - self.lim_x + self.rect.width / 2:
+        if self.pos.x - self.game.posSol.rect.x < self.x - self.lim_x + self.rect.width / 2:
             self.direction = 'droite'
-        elif self.pos.x > self.x + self.lim_x - self.rect.width / 2:
+        elif self.pos.x - self.game.posSol.rect.x> self.x + self.lim_x - self.rect.width / 2:
 
             self.direction = 'gauche'
 
